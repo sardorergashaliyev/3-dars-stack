@@ -17,48 +17,51 @@ class MyApp extends StatelessWidget {
             Positioned(
               right: 150,
               bottom: 260,
-              child: Align(
-                child: Container(
-                  child: Text('Green',
-                      style: TextStyle(
-                        fontSize: 20,
-                          color: Colors.white,
-                          decoration: TextDecoration.none)),
-                  height: 200,
-                  width: 200,
+              child: Container(
+                height: 200,
+                width: 200,
+                decoration: const BoxDecoration(
                   color: Colors.green,
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
+                child: const Text('Green',
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        decoration: TextDecoration.none)),
               ),
             ),
             Positioned(
                 right: 110,
                 bottom: 220,
-                child: Align(
-                  child: Container(
-                    child: Text('Red',
+                child: Container(
+                  height: 200,
+                  width: 200,
+                  decoration: const BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+                  child: const Text('Red',
                       style: TextStyle(
-                        fontSize: 20,
+                          fontSize: 20,
                           color: Colors.white,
                           decoration: TextDecoration.none)),
-                    height: 200,
-                    width: 200,
-                    color: Colors.red,
-                  ),
                 )),
             Positioned(
                 right: 60,
                 bottom: 180,
-                child: Align(
-                  child: Container(
-                    child: Text('Purple',
+                child: Container(
+                  height: 200,
+                  width: 200,
+                  decoration: const BoxDecoration(
+                    color: Colors.purple,
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+                  child: const Text('Purple',
                       style: TextStyle(
-                        fontSize: 20,
+                          fontSize: 20,
                           color: Colors.white,
                           decoration: TextDecoration.none)),
-                    height: 200,
-                    width: 200,
-                    color: Colors.purple,
-                  ),
                 )),
           ]),
         ),
