@@ -15,33 +15,29 @@ class MyApp extends StatelessWidget {
         child: Center(
           child: Stack(children: [
             Align(
-              alignment: Alignment.center,
+              alignment: Alignment.topCenter,
               child: Container(
-                height: 200,
-                width: 200,
-                color: Colors.red,
-              ),
-            ),
-              Align(
-              alignment: Alignment.center,
-              child: Container(
-                height: 200,
-                width: 200,
-                color: Colors.red,
-              ),
-            ),
-            Align(
-              alignment: Alignment.center,
-              child: Container(
-                height: 150,
-                width: 150,
-                color: Colors.yellow,
+                height: 5000,
+                width: 5000,
+                color: Color.fromARGB(255, 53, 120, 255),
               ),
             ),
             Positioned(
+              right: 200,
+              child: Align(
+                alignment: Alignment.topCenter,
+                child: Container(
+                  height: 40000,
+                  width: 100,
+                  color: Colors.yellow,
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 500,
               child: Container(
-                height: 50,
-                width: 50,
+                height: 100,
+                width: 5000,
                 color: Colors.yellow,
               ),
             )
